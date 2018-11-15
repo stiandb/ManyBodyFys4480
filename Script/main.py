@@ -138,7 +138,6 @@ print(E)
 print(bmatrix(H) + '\n')
 
 
-
 BerylliumCI = CI(4,TBME)
 BerylliumCI.set_states(states)
 Z = 4
@@ -166,9 +165,10 @@ def HE_ref_energy(Z):
 	return((5/8 - Z)*Z)
 
 def BE_ref_energy(Z):
-	return((49565/41472 - 5/4*Z)*Z)
+	return((586373/373248 - 5/4*Z)*Z)
 
-Z = np.linspace(1,5,50)
+Z = np.linspace(0,2,50)
+
 EHE = HE_ref_energy(Z)
 EBE = BE_ref_energy(Z)
 
